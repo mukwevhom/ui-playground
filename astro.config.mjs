@@ -9,5 +9,5 @@
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
 	// Comment out "renderers: []" to enable Astro's default component support.
-	renderers: ['@astrojs/renderer-vue', '@astrojs/renderer-react', '@astrojs/renderer-svelte'],
+    renderers: ['@astrojs/renderer-vue', '@astrojs/renderer-react', '@astrojs/renderer-svelte'],
 });

@@ -1,29 +1,23 @@
 ---
-import ReactCounter from '../components/react/Counter.jsx';
-import SvelteCounter from '../components/svelte/SvelteCounter.svelte';
-import VueCounter from '../components/vue/VueCounter.vue';
-
-const someProps = {
-	count: 10,
-};
-
+import Head from '../components/Head.astro';
+import MainLayout from '../components/layouts/MainLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<title>UI Playground</title>
-		<style>
-			/* scoped CSS styles go here: */
-			/* h1 { ... } */
-		</style>
-	</head>
+	<Head />
 
 	<body>
-		<a href="/react">React</a>
-		<a href="/svelte">Svelte</a>
-		<a href="/vue">Vue</a>
+        <MainLayout>
+            <Header slot="header" />
+            <div class="container">
+                <a href="/react">React</a>
+                <a href="/svelte">Svelte</a>
+                <a href="/vue">Vue</a>
+            </div>
+            
+            <Footer slot="footer" />
+        </MainLayout>
 	</body>
 </html>
