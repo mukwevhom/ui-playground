@@ -9,12 +9,12 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.22.4",
+    "astro": "^1.1.7",
     "tailwindcss": "^3.0.13"
   },
   "dependencies": {
-    "@astrojs/renderer-react": "^0.4.0",
-    "@astrojs/renderer-svelte": "^0.3.1",
-    "@astrojs/renderer-vue": "^0.3.0"
+    "@astrojs/react": "^1.1.1",
+    "@astrojs/svelte": "^1.0.0",
+    "@astrojs/vue": "^1.0.1"
   }
 }
