@@ -1,4 +1,5 @@
 ---
+import MainLayout from '../../components/layouts/MainLayout.astro';
 import VueCounter from '../../components/vue/VueCounter.vue';
 ---
 
@@ -15,6 +16,9 @@ import VueCounter from '../../components/vue/VueCounter.vue';
 	</head>
 
 	<body>
+		<MainLayout>
+			test
+		</MainLayout>
         <VueCounter client:visible>
             <h1>Hello, Vue!</h1>
         </VueCounter>
