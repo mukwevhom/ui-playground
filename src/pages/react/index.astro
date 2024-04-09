@@ -1,5 +1,5 @@
 ---
-import Head from '../../components/Head.astro'
+import MainLayout from '../../components/layouts/MainLayout.astro';
 import ReactCounter from '../../components/react/Counter.jsx';
 
 const someProps = {
@@ -8,12 +8,8 @@ const someProps = {
 
 ---
 
-<html lang="en">
-	<Head pageName="React" />
-
-	<body>
-        <ReactCounter { ...someProps } client:visible>
-            <h1>Hello, React!</h1>
-        </ReactCounter>
-    </body>
-</html>
+<MainLayout>
+    <ReactCounter { ...someProps } client:visible>
+        <h1>Hello, React!</h1>
+    </ReactCounter>
+</MainLayout>

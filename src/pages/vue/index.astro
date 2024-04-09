@@ -3,24 +3,8 @@ import MainLayout from '../../components/layouts/MainLayout.astro';
 import VueCounter from '../../components/vue/VueCounter.vue';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<title>UI Playground | Vue</title>
-		<style>
-			/* scoped CSS styles go here: */
-			/* h1 { ... } */
-		</style>
-	</head>
-
-	<body>
-		<MainLayout>
-			test
-		</MainLayout>
-        <VueCounter client:visible>
-            <h1>Hello, Vue!</h1>
-        </VueCounter>
-    </body>
-</html>
+<MainLayout>
+	<VueCounter client:visible>
+		<h1>Hello, Vue!</h1>
+	</VueCounter>
+</MainLayout>

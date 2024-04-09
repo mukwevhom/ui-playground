@@ -5,19 +5,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<Head />
-
-	<body>
-        <MainLayout>
-            <Header slot="header" />
-            <div class="container">
-                <a href="/react">React</a>
-                <a href="/svelte">Svelte</a>
-                <a href="/vue">Vue</a>
-            </div>
-            
-            <Footer slot="footer" />
-        </MainLayout>
-	</body>
-</html>
+<MainLayout>
+    <Header slot="header" />
+    Home Page
+    <Footer slot="footer" />
+</MainLayout>
