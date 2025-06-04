@@ -2,14 +2,19 @@ import { defineConfig } from 'astro/config';
 import vue from '@astrojs/vue';
 import react from '@astrojs/react';
 import svelte from '@astrojs/svelte';
-import tailwind from '@astrojs/tailwind';
+
+
+import tailwindcss from '@tailwindcss/vite';
 
 
 export default defineConfig({
-    integrations: [
-        tailwind(),
-        vue(),
-        react(),
-        svelte(),
-    ]
+  integrations: [
+      vue(),
+      react(),
+      svelte(),
+  ],
+
+  vite: {
+    plugins: [tailwindcss()]
+  }
 })
