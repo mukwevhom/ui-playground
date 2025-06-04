@@ -1,5 +1,14 @@
 ---
+import './src/styles/global.css'
+import Head from '../../../components/Head.astro';
 import BondCalculator from '../../../components/react/bond-calculator/Calculator.tsx';
 ---
 
-<BondCalculator />
+<html lang="en">
+	<Head />
+	<body>
+        <main>
+            <BondCalculator />
+        </main>
+    </body>
+</html>
