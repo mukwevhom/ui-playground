@@ -25,7 +25,7 @@ export default function BondCalculator() {
               </div>
               <div className='mt-4 bg-teal-700/60 rounded-4xl py-1.5 px-2.5 leading-none flex w-fit'>
                 <label className='block text-sm'>Include initiation fee in your home loan?</label>
-                <input type="checkbox" className='h-auto appearance-none w-4 h-4 border-2 border-blue-500 rounded-full bg-white' />
+                <input type="checkbox" className='appearance-none w-4 h-4 border-2 border-blue-500 rounded-full bg-white' />
               </div>
             </form>
           </div>
